@@ -11,6 +11,8 @@ const GAUGES = {
   south: { site: "01329500", name: "Batten Kill at Battenville", latitude: 43.100528, longitude: -73.431222 }
 };
 
+const TIGHTLINEVIDEO_CHANNEL = "https://www.youtube.com/@Tightlinevideo";
+
 const REACHES = [
   { name: "West Arlington reach", area: "West Arlington", latitude: 43.071, longitude: -73.192, state: "Vermont" },
   { name: "Arlington reach", area: "Arlington", latitude: 43.074, longitude: -73.156, state: "Vermont" },
@@ -25,10 +27,10 @@ const TECHNIQUES = {
     window: "Late morning into the evening",
     reason: "Stay focused on surface activity. Look for rising fish and visible insects before changing patterns; a quiet surface can mean waiting for a hatch, not changing your technique.",
     flies: [
-      { title: "Blue-Winged Olive", description: "A useful small mayfly imitation for cool, overcast days and fall activity. Match the size you actually see on the water.", materials: ["Hook: dry-fly hook, sizes 16–20", "Olive dubbing and fine olive thread", "Medium dun hackle", "Gray or olive CDC / wing material"], query: "Tim Flagler Blue Winged Olive fly tying" },
-      { title: "Parachute Adams", description: "A dependable searching dry when you need a visible, general mayfly profile. Adjust size to the naturals.", materials: ["Hook: dry-fly hook, sizes 14–20", "Gray dubbing and fine thread", "Grizzly hackle", "White post material"], query: "Tim Flagler Parachute Adams tying" },
-      { title: "Elk Hair Caddis", description: "A buoyant caddis pattern for evenings and active caddis on the water.", materials: ["Hook: dry-fly hook, sizes 14–18", "Olive or tan dubbing", "Brown hackle", "Elk hair wing"], query: "Tim Flagler Elk Hair Caddis tying" },
-      { title: "Sulphur Dun", description: "A pale mayfly pattern for the warmer months when sulphurs are present. Confirm color and size at the stream.", materials: ["Hook: dry-fly hook, sizes 14–18", "Pale yellow dubbing", "Light ginger hackle", "Light dun wing material"], query: "Tim Flagler Sulphur dry fly tying" }
+      { title: "Blue-Winged Olive", description: "A useful small mayfly imitation for cool, overcast days and fall activity. Match the size you actually see on the water.", materials: ["Hook: dry-fly hook, sizes 16–20", "Olive dubbing and fine olive thread", "Medium dun hackle", "Gray or olive CDC / wing material"], query: "Blue Winged Olive fly tying" },
+      { title: "Parachute Adams", description: "A dependable searching dry when you need a visible, general mayfly profile. Adjust size to the naturals.", materials: ["Hook: dry-fly hook, sizes 14–20", "Gray dubbing and fine thread", "Grizzly hackle", "White post material"], query: "Parachute Adams tying" },
+      { title: "Elk Hair Caddis", description: "A buoyant caddis pattern for evenings and active caddis on the water.", materials: ["Hook: dry-fly hook, sizes 14–18", "Olive or tan dubbing", "Brown hackle", "Elk hair wing"], query: "Elk Hair Caddis tying" },
+      { title: "Sulphur Dun", description: "A pale mayfly pattern for the warmer months when sulphurs are present. Confirm color and size at the stream.", materials: ["Hook: dry-fly hook, sizes 14–18", "Pale yellow dubbing", "Light ginger hackle", "Light dun wing material"], query: "Sulphur dry fly tying" }
     ]
   },
   "dry-dropper": {
@@ -36,10 +38,10 @@ const TECHNIQUES = {
     window: "Late morning through afternoon",
     reason: "Use a buoyant dry as both an attractor and an indicator, with a small nymph underneath. Keep the dropper short in shallow runs and avoid dragging the rig through rising fish.",
     flies: [
-      { title: "Parachute Adams + Pheasant Tail", description: "A visible mayfly dry paired with a slim nymph to cover two feeding lanes without abandoning your dry-dropper approach.", materials: ["Dry: hook sizes 14–18, gray dubbing, grizzly hackle, white post", "Dropper: nymph hook sizes 16–20, pheasant tail fibers", "Copper wire, peacock herl, fine thread", "Optional small bead for the nymph"], query: "Tim Flagler Pheasant Tail nymph tying" },
-      { title: "Elk Hair Caddis + Hare's Ear", description: "A buoyant caddis imitation above a buggy nymph. A practical searching pair when you see no clear hatch.", materials: ["Dry: hook sizes 14–18, dubbing, hackle, elk hair", "Dropper: nymph hook sizes 14–18", "Hare's ear dubbing, gold wire, pheasant tail", "Fine thread and optional bead"], query: "Tim Flagler Hare's Ear nymph tying" },
-      { title: "Stimulator + Pheasant Tail", description: "A sturdy dry-dropper combination for broken water, with an attractor dry above a more natural nymph.", materials: ["Dry: hook sizes 10–14, orange/yellow dubbing, hackle", "Elk hair wing and fine wire", "Dropper: nymph hook sizes 14–18", "Pheasant tail, copper wire, peacock herl"], query: "Tim Flagler Stimulator fly tying" },
-      { title: "Parachute Adams + Zebra Midge", description: "A subtle mayfly-style surface fly with a small, simple subsurface midge for slower pools.", materials: ["Dry: hook sizes 16–20, gray dubbing and hackle", "White post material", "Dropper: midge hook sizes 18–22", "Black thread, fine silver wire, optional bead"], query: "Tim Flagler Zebra Midge tying" }
+      { title: "Parachute Adams + Pheasant Tail", description: "A visible mayfly dry paired with a slim nymph to cover two feeding lanes without abandoning your dry-dropper approach.", materials: ["Dry: hook sizes 14–18, gray dubbing, grizzly hackle, white post", "Dropper: nymph hook sizes 16–20, pheasant tail fibers", "Copper wire, peacock herl, fine thread", "Optional small bead for the nymph"], query: "Pheasant Tail nymph tying" },
+      { title: "Elk Hair Caddis + Hare's Ear", description: "A buoyant caddis imitation above a buggy nymph. A practical searching pair when you see no clear hatch.", materials: ["Dry: hook sizes 14–18, dubbing, hackle, elk hair", "Dropper: nymph hook sizes 14–18", "Hare's ear dubbing, gold wire, pheasant tail", "Fine thread and optional bead"], query: "Hare's Ear nymph tying" },
+      { title: "Stimulator + Pheasant Tail", description: "A sturdy dry-dropper combination for broken water, with an attractor dry above a more natural nymph.", materials: ["Dry: hook sizes 10–14, orange/yellow dubbing, hackle", "Elk hair wing and fine wire", "Dropper: nymph hook sizes 14–18", "Pheasant tail, copper wire, peacock herl"], query: "Stimulator fly tying" },
+      { title: "Parachute Adams + Zebra Midge", description: "A subtle mayfly-style surface fly with a small, simple subsurface midge for slower pools.", materials: ["Dry: hook sizes 16–20, gray dubbing and hackle", "White post material", "Dropper: midge hook sizes 18–22", "Black thread, fine silver wire, optional bead"], query: "Zebra Midge tying" }
     ]
   },
   streamer: {
@@ -47,10 +49,10 @@ const TECHNIQUES = {
     window: "Early and late light; cloudy hours",
     reason: "Keep the streamer plan. Lower light and cloud cover can help, while higher or off-color water may call for a larger silhouette and slower presentation. Use caution around rising flows.",
     flies: [
-      { title: "Woolly Bugger", description: "A versatile searching streamer to swing or strip through deeper seams and pools. Start with a natural olive or black profile.", materials: ["Streamer hook, sizes 6–10", "Marabou tail and chenille body", "Palmered saddle hackle", "Optional brass or tungsten bead"], query: "Tim Flagler Woolly Bugger fly tying" },
-      { title: "Muddler Minnow", description: "A classic baitfish and attractor pattern that can be fished across current or near structure.", materials: ["Streamer hook, sizes 6–10", "Mottled turkey or mallard wing", "Gold tinsel and brown hackle", "Deer-hair head and natural dubbing"], query: "Tim Flagler Muddler Minnow fly tying" },
-      { title: "Sculpzilla", description: "A compact sculpin-style streamer for a deliberate retrieve near the bottom. Check hook rules before fishing.", materials: ["Streamer hook, sizes 4–8", "Olive or brown marabou", "Sculpin-style head or dubbing", "Flash, wire, and natural hackle"], query: "Tim Flagler sculpin streamer fly tying" },
-      { title: "Black Woolly Bugger", description: "A darker silhouette can be easier to track in stained water or low light; reduce weight in shallow runs.", materials: ["Streamer hook, sizes 6–10", "Black marabou tail", "Black chenille and saddle hackle", "Optional cone or bead"], query: "Tim Flagler Woolly Bugger fly tying" }
+      { title: "Woolly Bugger", description: "A versatile searching streamer to swing or strip through deeper seams and pools. Start with a natural olive or black profile.", materials: ["Streamer hook, sizes 6–10", "Marabou tail and chenille body", "Palmered saddle hackle", "Optional brass or tungsten bead"], query: "Woolly Bugger fly tying" },
+      { title: "Muddler Minnow", description: "A classic baitfish and attractor pattern that can be fished across current or near structure.", materials: ["Streamer hook, sizes 6–10", "Mottled turkey or mallard wing", "Gold tinsel and brown hackle", "Deer-hair head and natural dubbing"], query: "Muddler Minnow fly tying" },
+      { title: "Sculpzilla", description: "A compact sculpin-style streamer for a deliberate retrieve near the bottom. Check hook rules before fishing.", materials: ["Streamer hook, sizes 4–8", "Olive or brown marabou", "Sculpin-style head or dubbing", "Flash, wire, and natural hackle"], query: "sculpin streamer fly tying" },
+      { title: "Black Woolly Bugger", description: "A darker silhouette can be easier to track in stained water or low light; reduce weight in shallow runs.", materials: ["Streamer hook, sizes 6–10", "Black marabou tail", "Black chenille and saddle hackle", "Optional cone or bead"], query: "Woolly Bugger fly tying" }
     ]
   },
   wet: {
@@ -58,10 +60,10 @@ const TECHNIQUES = {
     window: "Morning through the last light",
     reason: "Look for current seams and soft edges where a wet fly can swing naturally. A gentle swing is the plan; keep the fly unweighted or lightly weighted unless depth calls for more.",
     flies: [
-      { title: "Partridge and Orange", description: "A classic soft-hackle wet fly with a sparse profile that comes alive as it swings.", materials: ["Wet-fly hook, sizes 14–18", "Orange silk or fine thread", "Sparse partridge hackle", "Optional touch of dubbed thorax"], query: "Tim Flagler Partridge and Orange soft hackle tying" },
-      { title: "Partridge and Green", description: "A versatile soft-hackle pattern for a searching swing when there is no single hatch to match.", materials: ["Wet-fly hook, sizes 14–18", "Green silk or fine thread", "Sparse partridge hackle", "Peacock herl thorax"], query: "Tim Flagler soft hackle wet fly tying" },
-      { title: "March Brown Wet Fly", description: "A traditional wet-fly profile to swing when larger mayflies are active or as a general attractor.", materials: ["Wet-fly hook, sizes 10–14", "Brown dubbing and thread", "Mallard or wood-duck wing", "Soft hen hackle"], query: "Tim Flagler wet fly tying" },
-      { title: "Pheasant Tail Soft Hackle", description: "A slim mayfly nymph profile with mobile hackle, well suited to a controlled swing.", materials: ["Wet-fly hook, sizes 14–18", "Pheasant tail fibers", "Copper wire and fine thread", "Sparse partridge or hen hackle"], query: "Tim Flagler Pheasant Tail soft hackle tying" }
+      { title: "Partridge and Orange", description: "A classic soft-hackle wet fly with a sparse profile that comes alive as it swings.", materials: ["Wet-fly hook, sizes 14–18", "Orange silk or fine thread", "Sparse partridge hackle", "Optional touch of dubbed thorax"], query: "Partridge and Orange soft hackle tying" },
+      { title: "Partridge and Green", description: "A versatile soft-hackle pattern for a searching swing when there is no single hatch to match.", materials: ["Wet-fly hook, sizes 14–18", "Green silk or fine thread", "Sparse partridge hackle", "Peacock herl thorax"], query: "soft hackle wet fly tying" },
+      { title: "March Brown Wet Fly", description: "A traditional wet-fly profile to swing when larger mayflies are active or as a general attractor.", materials: ["Wet-fly hook, sizes 10–14", "Brown dubbing and thread", "Mallard or wood-duck wing", "Soft hen hackle"], query: "wet fly tying" },
+      { title: "Pheasant Tail Soft Hackle", description: "A slim mayfly nymph profile with mobile hackle, well suited to a controlled swing.", materials: ["Wet-fly hook, sizes 14–18", "Pheasant tail fibers", "Copper wire and fine thread", "Sparse partridge or hen hackle"], query: "Pheasant Tail soft hackle tying" }
     ]
   },
   euro: {
@@ -69,10 +71,10 @@ const TECHNIQUES = {
     window: "Mid-morning through afternoon",
     reason: "Work the subsurface with a controlled contact drift. Focus on depth, speed, and clean drifts through likely holding water; use the lighter setup that still reaches the target lane.",
     flies: [
-      { title: "Frenchie", description: "A compact, buggy nymph with a hot spot that makes a useful point fly in a two-fly European nymph rig.", materials: ["Jig hook, sizes 14–18", "Slotted tungsten bead", "Pheasant tail fibers and fine wire", "Peacock herl and bright thread collar"], query: "Tim Flagler Frenchie nymph tying" },
-      { title: "Perdigon", description: "A slim, fast-sinking pattern for reaching deeper lanes with minimal drag.", materials: ["Jig hook, sizes 14–18", "Slotted tungsten bead", "Fine thread body and rib", "UV resin or clear coat"], query: "Tim Flagler Perdigon nymph tying" },
-      { title: "Pheasant Tail Jig", description: "A simple natural nymph profile on a jig hook, useful as a point or dropper fly.", materials: ["Jig hook, sizes 14–18", "Slotted tungsten bead", "Pheasant tail fibers", "Copper wire and fine thread"], query: "Tim Flagler Pheasant Tail nymph tying" },
-      { title: "Rainbow Warrior", description: "A small, reflective nymph to add a touch of flash when a natural pattern is not drawing interest.", materials: ["Jig hook, sizes 16–20", "Slotted tungsten bead", "Pearl tinsel body", "Red thread collar and fine wire"], query: "Tim Flagler Rainbow Warrior nymph tying" }
+      { title: "Frenchie", description: "A compact, buggy nymph with a hot spot that makes a useful point fly in a two-fly European nymph rig.", materials: ["Jig hook, sizes 14–18", "Slotted tungsten bead", "Pheasant tail fibers and fine wire", "Peacock herl and bright thread collar"], query: "Frenchie nymph tying" },
+      { title: "Perdigon", description: "A slim, fast-sinking pattern for reaching deeper lanes with minimal drag.", materials: ["Jig hook, sizes 14–18", "Slotted tungsten bead", "Fine thread body and rib", "UV resin or clear coat"], query: "Perdigon nymph tying" },
+      { title: "Pheasant Tail Jig", description: "A simple natural nymph profile on a jig hook, useful as a point or dropper fly.", materials: ["Jig hook, sizes 14–18", "Slotted tungsten bead", "Pheasant tail fibers", "Copper wire and fine thread"], query: "Pheasant Tail nymph tying" },
+      { title: "Rainbow Warrior", description: "A small, reflective nymph to add a touch of flash when a natural pattern is not drawing interest.", materials: ["Jig hook, sizes 16–20", "Slotted tungsten bead", "Pearl tinsel body", "Red thread collar and fine wire"], query: "Rainbow Warrior nymph tying" }
     ]
   }
 };
@@ -233,8 +235,10 @@ function updateRecommendation(techniqueKey, tripDateValue, weather, flow = lates
   $("#fly-description").textContent = fly.description;
   $("#materials-count").textContent = `${fly.materials.length} ITEMS`;
   $("#materials-list").innerHTML = fly.materials.map((item) => `<li>${item}</li>`).join("");
-  $("#video-link").href = `https://www.youtube.com/results?search_query=${encodeURIComponent(fly.query)}`;
-  $("#video-credit").textContent = "YouTube search · Tim Flagler first; verify the video";
+  const videoSearch = new URL(`${TIGHTLINEVIDEO_CHANNEL}/search`);
+  videoSearch.searchParams.set("query", fly.query);
+  $("#video-link").href = videoSearch.href;
+  $("#video-credit").textContent = "Tightlinevideo on YouTube";
 }
 
 async function loadWeather(origin, tripDateValue, requestId) {
